@@ -1,0 +1,277 @@
+*{
+    font-family: EB Garamond;
+}
+
+.banner-img{
+    background-image: url(./images/banner.png), url(./images/Rectangle\ 7.png);
+
+    
+    background-repeat: no-repeat;
+    
+    height: 70vh;
+    
+    
+}
+
+
+.banner-description{
+    padding-top: 110px;
+    padding-right: 50px;
+    padding-left: 40px;
+    
+}
+.search-btn{
+    width: 664px;
+    height: 64px;
+    margin-top: 70px;
+    margin-left: 320px;
+}
+.card-body{
+    
+    padding-top: 5rem;
+}
+
+.gradiant{
+    background: hsla(0, 0%, 100%, 1);
+
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(22, 100%, 91%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(22, 100%, 91%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(22, 100%, 91%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#FFE2D1", GradientType=1 );
+}
+
+.carousel-img-1{
+    background-image: url(/images/1.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+
+}
+
+.expertise-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.expertise-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #6b4211; /* Brown color */
+    color: white;
+}
+
+.expertise-card:hover .card-title,
+.expertise-card:hover .card-text {
+    color: white;
+}
+
+.expertise-card:hover img {
+    filter: brightness(0) invert(1); /* Optional: Inverts image colors for better visibility */
+}
+
+
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #333;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #B68C5A;
+}
+
+.banner-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-img h1 {
+    line-height: 1.4;
+}
+
+.banner-img p {
+    font-size: 1.1rem;
+}
+
+.input-group input {
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+.navbar-nav{
+    font-size: 18px;
+}
+
+.find-out-more-btn {
+    background-color: white;
+    color: #8B4513; /* Brown color */
+    border: 2px solid #8B4513;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.find-out-more-btn:hover {
+    background-color: #B68C5A; /* Brown color */
+    color: white;
+}
+
+
+
+
+.who-we-are {
+    background-image: url('./images/WhatsApp\ Image\ 2024-12-07\ at\ 00.10.02_e6c11245.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    color: white; /* Makes text white for better contrast */
+    padding: 60px 20px; /* Adjust padding for spacing */
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for aesthetics */
+}
+
+
+.who-we-are h2 {
+    color: #ffffff; /* Brown color for the heading */
+}
+
+.who-we-are p {
+    color: #f0ebeb; /* Dark gray for paragraph text */
+    line-height: 1.6; /* Improved readability */
+    margin-bottom: 15px;
+}
+
+.who-we-are p:last-child {
+    margin-bottom: 0; /* Removes bottom margin from the last paragraph */
+}
+
+
+.articles-section {
+    background-color: #ffffff; /* White background */
+}
+
+.article-box {
+    background: #f9f9f9; /* Light gray background for article container */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.article-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.article-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.article-title {
+    font-weight: bold;
+    color: #333333; /* Dark gray for title */
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.article-text {
+    color: #555555; /* Subtle gray for description */
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+.article-date {
+    color: #b87647; /* Brown color for the date */
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .article-content {
+        text-align: center; /* Center align for smaller screens */
+    }
+}
+
+
+/* Modal Form Styling */
+.modal-body {
+    background-color: #f9f9f9; /* Light background for the form */
+    padding: 30px;
+}
+
+.modal-header {
+    background-color: #B68C5A; /* Color to match the theme */
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.modal-footer {
+    display: none; /* Hide the footer button when form is submitted */
+}
+
+/* Form Input Fields */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.form-control:focus {
+    border-color: #B68C5A; /* Focus border color */
+    box-shadow: 0 0 5px rgba(182, 140, 90, 0.5);
+}
+
+/* Submit Button */
+.btn-primary {
+    background-color: #B68C5A;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #9d7543; /* Darker brown on hover */
+}
+
+/* Confirmation Message */
+#confirmationMessage {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #28a745; /* Green color for success */
+    font-weight: bold;
+}
+
+/* Styling for the close button in the modal */
+.btn-close {
+    background-color: #B68C5A;
+    border: none;
+    color: white;
+}
+
+.btn-close:hover {
+    background-color: #9d7543;
+}
+
+/* Optional: Adjust the modal's width */
+.modal-dialog {
+    max-width: 600px;
+}
