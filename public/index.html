@@ -14,108 +14,86 @@
   <!-- Navbar -->
   <header class="container-fluid px-4">
     <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo2.png" alt="Logo" style="height: 50px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" style="color: #B68C5A;" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Legal Consultation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Our Lawyers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Legal Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                </ul>
-                <button type="button" class="btn text-white" style="background-color: #B68C5A;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Make an Appointment
-                </button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header" style="background-color: #b68d5a13;">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Appointment</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form id="appointmentForm" method="POST" action="/appointment">
-                                    <div class="form-group mb-3">
-                                        <label for="name">Full Name</label>
-                                        <input type="text" id="name" name="name" class="form-control" required>
-                                    </div>
-                                    <div class="form-group mb-3">
-                                        <label for="email">Email</label>
-                                        <input type="email" id="email" name="email" class="form-control" required>
-                                    </div>
-                                    <div class="form-group mb-3">
-                                        <label for="phone">Phone Number</label>
-                                        <input type="text" id="phone" name="phone" class="form-control" required>
-                                    </div>
-                                    <div class="form-group mb-3">
-                                        <label for="message">Message</label>
-                                        <textarea id="message" name="message" class="form-control" required></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
-                                </form>
-                                <div id="confirmationMessage" style="display:none; color: green; margin-top: 20px;">
-                                    Appointment booked successfully!
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo2.png" alt="Logo" style="height: 50px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" style="color: #B68C5A;" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Legal Consultation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Lawyers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Legal Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <button type="button" class="btn text-white" style="background-color: #B68C5A;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Make an Appointment
+          </button>
+  
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: #b68d5a13;">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Appointment</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                <div class="modal-body">
+                  <h2 style="color: black;">Make an Appointment</h2> <!-- Title for the form -->
+                  <form id="appointmentForm" method="POST" action="/appointment">
+                    <div class="form-group mb-3">
+                      <label for="name">Full Name</label>
+                      <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label for="phone">Phone Number</label>
+                      <input type="text" id="phone" name="phone" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" class="form-control" required></textarea>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label for="appointmentDate">Select Appointment Date</label>
+                      <input type="date" id="appointmentDate" name="appointmentDate" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
+                  </form>
+                  <div id="confirmationMessage" style="display:none; color: green; margin-top: 20px;">
+                    Appointment booked successfully!
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </nav>
-</header>
-
-<!-- Add jQuery for AJAX -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<script>
-    // Handle form submission with AJAX
-    $(document).ready(function () {
-        $('#appointmentForm').submit(function (e) {
-            e.preventDefault(); // Prevent the form from submitting the traditional way
-            
-            const formData = $(this).serialize(); // Serialize the form data for sending
-
-            $.ajax({
-                type: 'POST',
-                url: '/appointment', // The backend endpoint
-                data: formData,
-                success: function (response) {
-                    // Hide the form and show a success message
-                    $('#appointmentForm').hide();
-                    $('#confirmationMessage').show();
-                },
-                error: function () {
-                    alert('Error submitting the form. Please try again.');
-                }
-            });
-        });
-    });
-</script>
+  </header>
+  
 
 
 <!-- Banner -->
