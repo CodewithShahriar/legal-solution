@@ -275,3 +275,15 @@
 .modal-dialog {
     max-width: 600px;
 }
+
+
+/* Add margin-left to the form */
+.form-container {
+    margin-left: 20px;  /* Adjust as needed */
+  }
+  
+  /* Add padding bottom to the title */
+  .form-title {
+    padding-bottom: 15px;  /* Adjust the bottom padding */
+  }
+  
