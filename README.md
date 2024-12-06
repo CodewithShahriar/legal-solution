@@ -2,11 +2,12 @@
 
 This is a legal services website that allows users to book appointments with lawyers. The site includes various sections like Legal Consultation, Our Lawyers, and Legal Resources. It also includes a modal form for booking an appointment.
 
-## Features
+## Key Features
 
+- **Appointment Booking**: Users can fill out a form with their name, email, phone number, message, and appointment date to book an appointment with a lawyer.
+- **Confirmation Message**: After submitting the appointment form, users will receive a confirmation message indicating that their appointment was successfully booked.
 - **Responsive Design**: The website is built using Bootstrap for a mobile-friendly and responsive layout.
-- **Appointment Form**: A modal form for users to input their details and book an appointment.
-- **Backend**: Node.js and Express.js handle form submissions, storing appointment data in a JSON file.
+- **Backend Functionality**: Node.js and Express.js handle form submissions, storing appointment data in a JSON file.
 
 ## Tech Stack
 
@@ -22,14 +23,14 @@ This is a legal services website that allows users to book appointments with law
   - Body-Parser (for handling form data)
   - File System (for storing form data in a `data.json` file)
 
-legal-solution/
-│
-├── images/                # Images folder
-│   └── logo2.png
-│
-├── index.html             # Main HTML file
-├── style.css              # CSS Stylesheet
-├── appointment.js         # JavaScript for handling the appointment form
-├── data.json              # JSON file storing appointment data
-├── server.js              # Node.js backend server file
-└── package.json           # Project dependencies and configurations
+## Appointment Data
+
+Appointment data is stored in the `data.json` file on the server. You can view the submitted appointments there.
+
+### Backend API
+
+The backend API endpoint for the appointment form is `/appointment`. When the form is submitted, the data is sent to this endpoint using a POST request. The server will process the form data and return a success message.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
