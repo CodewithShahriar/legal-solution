@@ -55,8 +55,8 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <h2 style="color: black;">Make an Appointment</h2> <!-- Title for the form -->
-                  <form id="appointmentForm" method="POST" action="/appointment">
+                  <h2 style="color: black;" class="form-title">Make an Appointment</h2> <!-- Title for the form -->
+                  <form id="appointmentForm" method="POST" action="/appointment" class="form-container">
                     <div class="form-group mb-3">
                       <label for="name">Full Name</label>
                       <input type="text" id="name" name="name" class="form-control" required>
@@ -77,7 +77,7 @@
                       <label for="appointmentDate">Select Appointment Date</label>
                       <input type="date" id="appointmentDate" name="appointmentDate" class="form-control" required>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
+                    <button type="submit" class="btn w-100" style="background-color: #523818;color: #ffffff;">Book Appointment</button>
                   </form>
                   <div id="confirmationMessage" style="display:none; color: green; margin-top: 20px;">
                     Appointment booked successfully!
