@@ -658,3 +658,22 @@
   text-align: right;
   color: #1e3c72;
 }
+
+
+.step-number-box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffcb00; /* Gold border */
+  
+  margin-bottom: 10px; /* Adds space between the number and the heading */
+}
+
+.step-number-box h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffcb00; /* Gold text */
+}
