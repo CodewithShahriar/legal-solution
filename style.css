@@ -327,3 +327,65 @@
     cursor: pointer;
     font-size: 16px;
 }
+
+
+/* our Lawyers */
+.our-lawyers {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .lawyers-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .lawyer-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lawyer-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .social-icons a {
+    margin: 0 5px;
+    font-size: 1.2rem;
+    color: #555;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 50px;
+  }
+  
+  .stat {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .counter {
+    font-size: 2.5rem;
+    color: #007bff;
+  }
+  

@@ -61,3 +61,31 @@ function sendMessage() {
 window.onload = function() {
     document.getElementById("chatbot").style.display = "none"; // Start with chatbot hidden
 }
+
+
+
+
+// our lawyers
+document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
+    counters.forEach((counter) => {
+      counter.innerText = "0";
+  
+      const updateCounter = () => {
+        const target = +counter.getAttribute("data-target");
+        const current = +counter.innerText;
+  
+        const increment = target / 200;
+  
+        if (current < target) {
+          counter.innerText = `${Math.ceil(current + increment)}`;
+          setTimeout(updateCounter, 10);
+        } else {
+          counter.innerText = target.toLocaleString();
+        }
+      };
+  
+      updateCounter();
+    });
+  });
+  
