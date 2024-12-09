@@ -24,16 +24,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Home</a>
+                      <a class="nav-link active" style="color: #B68C5A;" href="#">Home</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="#">Services</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Courses</a>
+                      <a class="nav-link" href="#">Legal Consultation</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Blogs</a>
+                      <a class="nav-link" href="#">Legal Aid</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Legal Resources</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="#">Contact Us</a>
@@ -42,6 +45,26 @@
               <button type="button" class="btn text-white" style="background-color: #B68C5A;" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Free Consultation
               </button>
+
+              <!-- Modal -->
+<div class=" modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #b68d5a13;">
+        <h1 class="modal-title fs-5 " id="exampleModalLabel">Free Consultation</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+         <div class="modal-body">
+            This is a toll free (cost free) number. To avail Government Legal Aid services please call to the Call Center at <strong>16430</strong> for details information or visit National Legal Aid Organization Website for Contact details.
+          </div>
+        <div class="modal-footer">
+           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           <button type="button " style="background-color: #B68C5A;" class="btn text-white ">Call now</button>
+          </div>
+         </div>
+        </div>
+      </div>   
+    </div>
           </div>
       </div>
   </nav>
@@ -49,8 +72,9 @@
 
 <!-- Banner -->
 <main class="container-fluid px-0">
-  <section class="banner-img d-flex align-items-center" style="height: 80vh; background: url('images/banner.png') no-repeat center/cover;">
-      <div class="container text-center text-white">
+  <section class="d-flex justify-content-center align-items-center" style="height: 85vh; background-color: #f4f4f4;">
+    <div class="banner-img text-center" style="width: 86%; height: 100%; background: url('images/banner.png') no-repeat center center/cover; border-radius: 10px;">
+        <div class="text-center text-white" style=" height: 100%; display: flex; flex-direction: column; justify-content: center; border-radius: 10px;">
           <h1 class="fw-bold display-4">We Provide Effective <br> Legal Solutions</h1>
           <p class="fs-5 text-opacity-75 mt-3">
               Legal Solutions offers high-quality legal services based on professional expertise and commitment.
@@ -215,71 +239,96 @@
   </div>
 </section>
 
-   <!-- faq section -->
-   <section class="mt-5 py-5 px-3 ">
-    <h2 class="text-center fw-bold">  Frequently Asked Any Questions</h2>
-                <p class="text-center fs-5"> There are many variations of passages of Lorem Ipsum available, but the majority have <br>
-                    suffered alteration in some form, by injected humour.</p>
-    <div class="row row-cols-1 row-cols-md-2 mt-5 g-4">
-        
-        <div class="col pt-5 " >
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item mb-5 " >
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button  " style="background-color: #b68d5a27;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      <h3 >1.How can I choose the right lawyer for my legal case?</h3>
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      Choosing the right lawyer depends on the nature of your legal issue. Start by identifying attorneys who specialize in the area of law that applies to your case, such as business law, criminal law, or family law. It's important to consider their experience, track record, and reputation. You should also have a consultation to discuss your case, understand their approach, and ensure you feel comfortable working with them. A good lawyer will communicate clearly, listen to your concerns, and provide transparent advice.
-
-                      
-                    </div>
+   <!-- FAQ Section -->
+<section class="mt-5 py-5 px-3">
+  <div class="container">
+      <h2 class="text-center fw-bold" style="font-size: 2rem;">Frequently Asked Questions</h2>
+      <p class="text-center fs-5" style="max-width: 750px; margin: 0 auto;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+      <div class="row row-cols-1 row-cols-md-2 mt-5 g-4">
+          <!-- FAQ Accordion -->
+          <div class="col pt-5">
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item mb-5">
+                      <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" style="background-color: #b68d5a27;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <h3 class="mb-0">1. How can I choose the right lawyer for my legal case?</h3>
+                          </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              Choosing the right lawyer depends on the nature of your legal issue. Start by identifying attorneys who specialize in the area of law that applies to your case, such as business law, criminal law, or family law. It's important to consider their experience, track record, and reputation. You should also have a consultation to discuss your case, understand their approach, and ensure you feel comfortable working with them. A good lawyer will communicate clearly, listen to your concerns, and provide transparent advice.
+                          </div>
+                      </div>
                   </div>
-                </div>
-                <div class="accordion-item mb-5">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed " type="button"  style="background-color: #b68d5a27;" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <h3>2. What should I do if I’m facing criminal charges?</h3>
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      If you’re facing criminal charges, it’s important to act quickly. First, seek legal representation from a criminal defense attorney. Never speak to law enforcement or sign documents without your attorney present, as anything you say can be used against you. Your lawyer will guide you through the legal process and work on building a defense strategy tailored to your case.
-                    </div>
+                  <div class="accordion-item mb-5">
+                      <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" style="background-color: #b68d5a27;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <h3 class="mb-0">2. What should I do if I’m facing criminal charges?</h3>
+                          </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              If you’re facing criminal charges, it’s important to act quickly. First, seek legal representation from a criminal defense attorney. Never speak to law enforcement or sign documents without your attorney present, as anything you say can be used against you. Your lawyer will guide you through the legal process and work on building a defense strategy tailored to your case.
+                          </div>
+                      </div>
                   </div>
-                </div>
-                <div class="accordion-item mb-5">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button"  style="background-color: #b68d5a27;" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      
-                      <h3>3.How can I protect my business from legal issues?</h3>
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      To protect your business from legal issues, ensure you comply with local and federal laws. This includes setting up the proper legal structure (e.g., LLC, corporation), drafting clear contracts with clients and suppliers, protecting intellectual property (trademarks, patents), and ensuring you meet all tax requirements. Consulting with a business attorney is a good practice to ensure that you are following all necessary legal steps to safeguard your company.
-
-
-
-
-
-
-
-
-                    </div>
+                  <div class="accordion-item mb-5">
+                      <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" style="background-color: #b68d5a27;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <h3 class="mb-0">3. How can I protect my business from legal issues?</h3>
+                          </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              To protect your business from legal issues, ensure you comply with local and federal laws. This includes setting up the proper legal structure (e.g., LLC, corporation), drafting clear contracts with clients and suppliers, protecting intellectual property (trademarks, patents), and ensuring you meet all tax requirements. Consulting with a business attorney is a good practice to ensure that you are following all necessary legal steps to safeguard your company.
+                          </div>
+                      </div>
                   </div>
-                </div>
-                
               </div>
-        </div>
-        <div class="col text-center">
-          <img class="img-fluid" src="images/faq.png" alt="">
-        </div>
-       </div>
-    </section> 
+          </div>
+          <!-- Image Column -->
+          <div class="col text-center">
+              <img class="img-fluid" src="images/faq.png" alt="FAQ Image">
+          </div>
+      </div>
+  </div>
+</section>
+
+
       <!-- contact with us -->
+       <!-- Get in Touch Section -->
+<section class="container mt-5 py-5">
+  <div class="text-center mb-4">
+      <h2 class="fw-bold" style=" font-size: 2.1rem;">Get in Touch</h2>
+      <p class="text-muted fs-4">We'd love to hear from you! Please fill out the form below to reach us.</p>
+  </div>
+  <div class="row justify-content-center">
+      <div class="col-md-8">
+          <form class="p-4" style="border: 2px solid #dcdcdc; border-radius: 8px; background-color: #f8f9fa; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+              <div class="mb-4">
+                  <label for="name" class="form-label fw-bold fs-5">Your Name</label>
+                  <input type="text" class="form-control form-control-lg" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="mb-4">
+                  <label for="email" class="form-label fw-bold fs-5">Email Address</label>
+                  <input type="email" class="form-control form-control-lg" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-4">
+                  <label for="contact" class="form-label fw-bold fs-5">Contact Number</label>
+                  <input type="tel" class="form-control form-control-lg" id="contact" placeholder="Enter your contact number" required>
+              </div>
+              <div class="mb-4">
+                  <label for="message" class="form-label fw-bold fs-5">Your Message</label>
+                  <textarea class="form-control form-control-lg" id="message" rows="4" placeholder="Type your message" required></textarea>
+              </div>
+              <div class="text-center">
+                  <button type="submit" class="btn text-white px-5 py-2 fs-5" style="background-color: #B68C5A; border-radius: 5px;">Submit</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</section>
+
       
 
 
