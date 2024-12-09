@@ -552,3 +552,109 @@
     }
   }
   
+
+/*  */
+/* Section Styles */
+.services-process {
+  position: relative;
+  padding: 50px 0;
+  background: url('https://templatekit.rometheme.pro/prudent/wp-content/uploads/sites/17/2024/08/image14.jpg') 
+    no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-process::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  z-index: 1;
+}
+
+/* Container */
+.container {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* Left Section (Process Steps) */
+.process-steps {
+  color: #fff;
+  padding: 40px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.step {
+  margin-bottom: 20px;
+}
+
+.step h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffcb00;
+}
+
+.step h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.step p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Right Section (Image with Quote) */
+.image-quote {
+  position: relative;
+  background: url('https://templatekit.rometheme.pro/prudent/wp-content/uploads/sites/17/2024/08/image18.jpg')
+    no-repeat center/cover;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.quote-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.quote-author {
+  font-weight: bold;
+  text-align: right;
+  color: #1e3c72;
+}
