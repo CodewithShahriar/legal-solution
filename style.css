@@ -269,12 +269,21 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    /* background: #9d7341; */
-    color: #fff;
+    background-color: transparent;
     border: none;
-    padding: 10px;
-    border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
+    z-index: 1000;
+    padding: 0;
+}
+
+.chatbot-toggle img {
+    width: 40px; /* Smaller width for the logo */
+    height: 40px; /* Smaller height for the logo */
+    border-radius: 50%; /* Makes the logo circular if it's a square image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    transition: transform 0.3s ease;
+}
+
+.chatbot-toggle img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
