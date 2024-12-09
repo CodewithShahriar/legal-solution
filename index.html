@@ -501,20 +501,37 @@
 
 
    <!-- Chatbot Widget HTML -->
-   <div id="chatbot" class="chatbot">
-    <div class="chat-header">
-        <h4>Chatbot</h4>
-        <button id="close-chatbot">&times;</button>
+   <div id="chatbot">
+    <!-- Chatbot Header -->
+    <div id="chatbot-header">
+        
+        <span>Legal Solution -AI Assistant</span>
+        <button id="close-chatbot" onclick="toggleChatbot()">X</button>
     </div>
-    <div id="chat-messages" class="chat-messages"></div>
-    <div class="chat-input">
-        <input type="text" id="user-input" placeholder="Type your message here..." />
-        <button id="send-btn">Send</button>
+    
+    <!-- Chatbot Body -->
+    <div id="chatbot-body">
+        <div id="chatbot-messages">
+            <!-- Welcome message -->
+            <div class="chat-message bot-message"><img src="/images/ai-assiatant.png" alt="" style="width: 50px; padding-right: 10px;">Hello, How can I help you today?</div>
+            <div class="chat-message bot-message">
+                <button class="suggested-btn" onclick="userSelect('What services do you offer?')">What services do you offer?</button>
+                <button class="suggested-btn" onclick="userSelect('Can you provide legal consultation?')">Can you provide legal consultation?</button>
+                <button class="suggested-btn" onclick="userSelect('Tell me about the lawyers')">Tell me about the lawyers</button>
+                <!-- <button class="suggested-btn" onclick="userSelect('Contact us details')">Contact us details</button> -->
+            </div>
+        </div>
+        
+        <!-- Text input area for user -->
+        <div id="chatbot-input">
+            <input type="text" id="user-input" placeholder="Type your message here..." onkeydown="if(event.key === 'Enter') sendMessage()">
+            <button id="send-btn" onclick="sendMessage()">Send</button>
+        </div>
     </div>
 </div>
-<button id="open-chatbot" class="chatbot-toggle">
-    <img src="images/chatbot-logo.png" alt="Chatbot Logo" style="width: 40px; height: 40px;">
-</button>
+
+<!-- Chatbot Toggle Button -->
+<button id="chatbot-toggle-btn" onclick="toggleChatbot()">💬</button>
 
 
 
