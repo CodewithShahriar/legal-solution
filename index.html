@@ -498,6 +498,21 @@
     <a href="#" class="text-white mx-2"><i class="fa-brands fa-twitter"></i></a>
     <a href="#" class="text-white mx-2"><i class="fa-brands fa-linkedin"></i></a>
   </footer>
+
+
+    <!-- Chatbot Widget HTML -->
+    <div id="chatbot" class="chatbot">
+        <div class="chat-header">
+            <h4>Chatbot</h4>
+            <button id="close-chatbot">&times;</button>
+        </div>
+        <div id="chat-messages" class="chat-messages"></div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message here..." />
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+    <button id="open-chatbot" class="chatbot-toggle">💬 Chat with us!</button>
   
 
 
@@ -508,6 +523,7 @@
 
     <script src="script.js"></script>
     <script src="data_store.js"></script>
+    <script src="chatbot.js"></script>
 
   </body>
 </html>
