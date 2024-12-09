@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Legal Solution</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/bd160d65ef.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+
+
+  <!-- Navbar -->
+  <header class="container-fluid px-4">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo2.png" alt="Logo" style="height: 50px;" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Legal Consultation</a>
+            </li>
+            <li class="nav-item"><a class="nav-link " href="lawyers.html">Our Lawyers</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Legal Resources</a>
+            </li>
+            <li class="nav-item"><a class="nav-link active" style="color: #b68c5a;" href="#">Contact Us</a></li>
+          </ul>
+          <button
+            type="button"
+            class="btn text-white"
+            style="background-color: #b68c5a;"
+            data-bs-toggle="modal"
+            data-bs-target="#appointmentModal"
+          >
+            Make an Appointment
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+   <!-- Appointment Modal -->
+   <div
+   class="modal fade"
+   id="appointmentModal"
+   tabindex="-1"
+   aria-labelledby="appointmentModalLabel"
+   aria-hidden="true"
+ >
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="appointmentModalLabel">Make an Appointment</h5>
+         <button
+           type="button"
+           class="btn-close"
+           data-bs-dismiss="modal"
+           aria-label="Close"
+         ></button>
+       </div>
+       <div class="modal-body">
+         <form id="appointmentForm">
+           <div class="mb-3">
+             <label for="name" class="form-label">Name</label>
+             <input type="text" class="form-control" id="name" required />
+           </div>
+           <div class="mb-3">
+             <label for="email" class="form-label">Email</label>
+             <input type="email" class="form-control" id="email" required />
+           </div>
+           <div class="mb-3">
+             <label for="phone" class="form-label">Phone</label>
+             <input type="tel" class="form-control" id="phone" required />
+           </div>
+           <div class="mb-3">
+             <label for="date" class="form-label">Preferred Date</label>
+             <input type="date" class="form-control" id="date" required />
+           </div>
+           <button
+             type="submit"
+             class="btn text-white"
+             style="background-color: #b68c5a;"
+           >
+             Submit
+           </button>
+         </form>
+         <div
+           id="confirmationMessage"
+           class="text-success mt-3"
+           style="display: none;"
+         >
+           Your appointment has been booked successfully!
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ 
+ <section class="contact-section">
+    <div class="container">
+      <!-- Top Cards Section -->
+      <div class="top-cards">
+        <div class="card">
+          <div class="icon">
+            <img src="/images/address.png" alt="Address Icon" />
+          </div>
+          <div class="content">
+            <h4>Head Office</h4>
+            <p>555 4th 5t NW, Washington, <br>DC 20530, United States</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <img src="/images/email.png" alt="Email Icon" />
+          </div>
+          <div class="content">
+            <h4>Email Us</h4>
+            <p>support@legalsolution.tld<br>info@legalsolution.tld</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <img src="/images/call.png" alt="Phone Icon" />
+          </div>
+          <div class="content">
+            <h4>Call Us</h4>
+            <p>Phone: (888)2002-214<br>Fax: (888)2002-244</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Main Contact Section -->
+      <div class="row">
+        <!-- Left Content: Map and Text -->
+        <div class="contact-left">
+          <h3 class="section-heading">Get in Touch</h3>
+          <p class="section-description">
+            We're here to help! Reach out to us through any of the available contact options.
+            Your feedback is important to us, and we look forward to hearing from you!
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19861.58037163168!2d-0.1254879!3d51.5073509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2b536d2ea32a378f!2sLondon%20Eye!5e0!3m2!1sen!2sus!4v1674847316341!5m2!1sen!2sus"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"></iframe>
+        </div>
+  
+        <!-- Right Content: Contact Form -->
+        <div class="contact-right">
+          <h3 class="section-heading">Have a question or feedback?</h3>
+          <p class="section-description">
+            If you have any questions or feedback, we're all ears! <br>
+Feel free to reach out, and we'll get back to you as soon as possible.
+          </p>
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Name" required />
+              <input type="text" placeholder="Phone" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" required />
+              <input type="text" placeholder="Subject" required />
+            </div>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="submit-button">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+      
+    
+<!-- footer -->
+<footer class="mt-5 bg-dark text-white">
+    <div class="container py-5">
+        <div class="row ms-5 me-4">
+            <div class="col-md-3 ms-5">
+                <img class="img-fluid" src="images/logo.png" alt="">
+                <p class="text-white-50 pt-3">A Single Platform For 
+                  All Legal Services <br>
+                  </p>
+            </div>
+            <div class="col-md-2 text-white ps-5">
+                <h5 class="fw-bold pb-4 mt-3">Useful Links</h5>
+                <p><a class="text-decoration-none text-white-50" href="">Home</a></p>
+                <p><a class="text-decoration-none text-white-50" href="">About us</a></p>
+                <p><a class="text-decoration-none text-white-50" href="">Blog</a></p>
+                <p><a class="text-decoration-none text-white-50" href="">Contact Us</a></p>
+            </div>
+            <div class="col-md-2 text-white ps-5" >
+              <h5 class="fw-bold pb-4 mt-3">Contact Now</h5>
+                <p class="text-white-50">555 4th 5t NW, Washington <br>
+                  DC 20530, United States</p>
+                
+                <p class="text-white-50">
+                    support@legalsolution.tld
+                 </p>
+                  
+                
+            </div>
+            <div class="col-md-4 text-white ps-5">
+              <h5 class="fw-bold pb-4 mt-3">Subscribe</h5>
+                <p class="text-white-50">Subscribe for our latest & <br>
+                  Articles. We Won t Give You <br>
+                  Spam Mails</p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control rounded-3" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <img src="images/Group 42.png" alt="">
+                    
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+  
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2024 Legal Solution | All Rights Reserved</p>
+  <a href="#" class="text-white mx-2"><i class="fa-brands fa-facebook"></i></a>
+  <a href="#" class="text-white mx-2"><i class="fa-brands fa-twitter"></i></a>
+  <a href="#" class="text-white mx-2"><i class="fa-brands fa-linkedin"></i></a>
+</footer>
+
+
+
+
+
+  <!-- bs js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+  <script src="data_store.js"></script>
+  <script src="chatbot.js"></script>
+
+</body>
+</html>
