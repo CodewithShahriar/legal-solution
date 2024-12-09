@@ -152,3 +152,57 @@
 .who-we-are p:last-child {
     margin-bottom: 0; /* Removes bottom margin from the last paragraph */
 }
+
+
+.articles-section {
+    background-color: #ffffff; /* White background */
+}
+
+.article-box {
+    background: #f9f9f9; /* Light gray background for article container */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.article-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.article-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.article-title {
+    font-weight: bold;
+    color: #333333; /* Dark gray for title */
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.article-text {
+    color: #555555; /* Subtle gray for description */
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+.article-date {
+    color: #b87647; /* Brown color for the date */
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .article-content {
+        text-align: center; /* Center align for smaller screens */
+    }
+}
