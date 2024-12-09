@@ -51,13 +51,25 @@
 }
 
 .expertise-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .expertise-card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #6b4211; /* Brown color */
+    color: white;
 }
+
+.expertise-card:hover .card-title,
+.expertise-card:hover .card-text {
+    color: white;
+}
+
+.expertise-card:hover img {
+    filter: brightness(0) invert(1); /* Optional: Inverts image colors for better visibility */
+}
+
 
 
 .navbar-nav .nav-link {
@@ -92,4 +104,51 @@
 
 .navbar-nav{
     font-size: 18px;
+}
+
+.find-out-more-btn {
+    background-color: white;
+    color: #8B4513; /* Brown color */
+    border: 2px solid #8B4513;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.find-out-more-btn:hover {
+    background-color: #B68C5A; /* Brown color */
+    color: white;
+}
+
+
+
+
+.who-we-are {
+    background-image: url('./images/WhatsApp\ Image\ 2024-12-07\ at\ 00.10.02_e6c11245.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    color: white; /* Makes text white for better contrast */
+    padding: 60px 20px; /* Adjust padding for spacing */
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for aesthetics */
+}
+
+
+.who-we-are h2 {
+    color: #ffffff; /* Brown color for the heading */
+}
+
+.who-we-are p {
+    color: #f0ebeb; /* Dark gray for paragraph text */
+    line-height: 1.6; /* Improved readability */
+    margin-bottom: 15px;
+}
+
+.who-we-are p:last-child {
+    margin-bottom: 0; /* Removes bottom margin from the last paragraph */
 }
