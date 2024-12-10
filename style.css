@@ -331,33 +331,17 @@
 }
 
 /* Responsive Design for Mobile */
+/* Hide Chatbot on Mobile Devices */
 @media (max-width: 768px) {
   #chatbot {
-      width: 100%; /* Full width on mobile */
-      height: 70%; /* Adjust height for better visibility */
-      right: 0; /* Align to the right edge */
-      border-radius: 10px 10px 0 0; /* Remove side roundness */
-      margin-bottom: 0;
-  }
-
-  #chatbot-header {
-      font-size: 14px; /* Slightly smaller font for mobile */
-      padding: 8px; /* Reduce padding */
-  }
-
-  #chatbot-body {
-      font-size: 12px; /* Smaller font for mobile readability */
-  }
-
-  #chatbot-input input {
-      width: 70%; /* Adjust input field size */
+      display: none; /* Hide the chatbot */
   }
 
   #chatbot-toggle-btn {
-      bottom: 10px; /* Adjust position for smaller screens */
-      right: 10px;
+      display: none; /* Hide the toggle button */
   }
 }
+
 
 
 /* our Lawyers */
@@ -825,4 +809,71 @@
 .custom-contact-form select option {
   background: rgba(0, 0, 0, 0.8); /* Dark background for dropdown options */
   color: #fff; /* White text for options */
+}
+
+/* Responsive Design for Contact Section */
+@media (max-width: 768px) {
+  .custom-contact-section {
+      padding: 40px 15px; /* Adjust padding for smaller screens */
+      text-align: center; /* Center-align text for better readability */
+  }
+
+  .custom-container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+  }
+
+  .custom-contact-content {
+      flex-direction: column; /* Stack form and info vertically */
+      gap: 20px;
+  }
+
+  .custom-contact-form {
+      max-width: 100%; /* Full width for the form */
+      margin: 0; /* Remove side margins */
+  }
+
+  .custom-contact-form h2 {
+      font-size: 1.5rem; /* Slightly smaller headline */
+  }
+
+  .custom-contact-form h3 {
+      font-size: 1rem; /* Adjust subheading size */
+  }
+
+  .custom-contact-form input,
+  .custom-contact-form select,
+  .custom-contact-form textarea {
+      padding: 12px; /* Reduce padding for inputs */
+      font-size: 14px; /* Adjust font size */
+  }
+
+  .custom-contact-form textarea {
+      height: 100px; /* Slightly smaller height for textarea */
+  }
+
+  .custom-contact-info {
+      max-width: 100%; /* Full width for contact info */
+      margin-top: 20px; /* Adjust top margin */
+  }
+
+  .custom-info-item {
+      flex-direction: column; /* Stack icon and text */
+      align-items: center; /* Center-align content */
+      gap: 10px; /* Adjust gap between icon and text */
+  }
+
+  .custom-info-item h4 {
+      font-size: 1rem; /* Adjust title font size */
+  }
+
+  .custom-info-item p {
+      font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+
+  .custom-contact-form .custom-submit-btn {
+      width: 100%; /* Full-width button */
+      padding: 12px; /* Adjust padding */
+      font-size: 16px; /* Adjust font size */
+  }
 }
