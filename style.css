@@ -567,6 +567,80 @@
       flex-direction: column;
     }
   }
+
+
+  /* mobiel responsive conatct page */
+  /* Responsive styles for mobile */
+@media screen and (max-width: 768px) {
+  /* Adjust the section heading and description for smaller screens */
+  .section-heading {
+      font-size: 1.5rem; /* Reduce heading size */
+      text-align: center; /* Center-align for better layout */
+  }
+
+  .section-description {
+      font-size: 0.9rem; /* Reduce description size */
+      text-align: center; /* Center-align text */
+      margin-bottom: 15px; /* Reduce bottom margin */
+  }
+
+  /* Top Cards Section */
+  .top-cards {
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center; /* Center-align cards */
+      margin-top: 30px; /* Reduce top margin */
+      margin-bottom: 50px; /* Reduce bottom margin */
+  }
+
+  .top-cards .card {
+      width: 90%; /* Make cards take up most of the width */
+      margin-bottom: 20px; /* Add spacing between cards */
+  }
+
+  .top-cards .card .icon img {
+      height: 30px; /* Adjust icon size */
+      margin-right: 10px; /* Reduce right margin */
+  }
+
+  .top-cards .card .content h4 {
+      font-size: 16px; /* Adjust title size */
+      margin-left: 15px; /* Reduce left margin */
+  }
+
+  .top-cards .card .content p {
+      font-size: 12px; /* Adjust text size */
+  }
+
+  /* Contact Section */
+  .row {
+      flex-direction: column; /* Stack left and right sections vertically */
+      gap: 20px; /* Add spacing between sections */
+  }
+
+  .contact-left,
+  .contact-right {
+      width: 100%; /* Make both sections full-width */
+      margin-bottom: 20px; /* Add spacing between stacked sections */
+  }
+
+  /* Form Styles */
+  form {
+      gap: 15px; /* Increase gap between form elements for better readability */
+  }
+
+  .form-group input,
+  textarea {
+      padding: 8px; /* Adjust padding for smaller screens */
+      font-size: 14px; /* Reduce font size */
+  }
+
+  .submit-button {
+      padding: 12px; /* Adjust button padding */
+      font-size: 16px; /* Slightly larger button text */
+      width: 100%; /* Full-width button */
+  }
+}
+
   
 
 /*  */
