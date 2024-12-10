@@ -210,122 +210,124 @@
 
 /* Chatbot container */
 /* Chatbot Widget Styles */
+/* Chatbot Container */
 #chatbot {
-    position: fixed;
-    bottom: 0;
-    right: 20px;
-    width: 300px;
-    height: 400px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-    margin-bottom: 40px;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  margin-bottom: 40px;
+  z-index: 9999; /* Ensures it's in front of other elements */
 }
 
 /* Chatbot Header */
 #chatbot-header {
-    background-color: #B68C5A;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px 10px 0 0;
-    font-size: 16px;
+  background-color: #B68C5A;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  font-size: 16px;
 }
 
 /* Close Button */
 #chatbot-header button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    font-weight: bold;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 /* Chatbot Body */
 #chatbot-body {
-    flex-grow: 1;
-    padding: 10px;
-    overflow-y: auto;
-    font-size: 14px;
-   
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 14px;
 }
 
 /* Chatbot Messages */
 .chat-message {
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 8px;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
 }
 
 /* Bot Message */
 .bot-message {
-    background-color: #f1f1f1;
-    color: #333;
+  background-color: #f1f1f1;
+  color: #333;
 }
 
 /* Suggested Button Styling */
 .suggested-btn {
-    background-color: #f9f9f9;
-    border: 1px solid #B68C5A;
-    color: #333;
-    padding: 8px 15px;
-    border-radius: 5px;
-    margin: 5px 0;
-    cursor: pointer;
-    font-size: 14px;
-    display: inline-block;
-    transition: background-color 0.3s, color 0.3s;
+  background-color: #f9f9f9;
+  border: 1px solid #B68C5A;
+  color: #333;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin: 5px 0;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Hover Effect on Suggested Buttons */
 .suggested-btn:hover {
-    background-color: #B68C5A;
-    color: white;
+  background-color: #B68C5A;
+  color: white;
 }
 
 /* User Text Input Area */
 #chatbot-input {
-    display: flex;
-    padding: 10px;
-    background-color: #f1f1f1;
-    border-radius: 0 0 10px 10px;
+  display: flex;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 0 0 10px 10px;
 }
 
 #chatbot-input input {
-    width: 80%;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
+  width: 80%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
 #chatbot-input button {
-    background-color: #B68C5A;
-    color: white;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #B68C5A;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Chatbot Toggle Button */
 #chatbot-toggle-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #B68C5A;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 16px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #B68C5A;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 10000; /* Ensures the toggle button is in front */
 }
 
 
