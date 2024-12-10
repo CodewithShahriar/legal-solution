@@ -30,6 +30,42 @@
     
     padding-top: 5rem;
 }
+/* Responsive styles for Banner Section */
+@media screen and (max-width: 768px) {
+  .banner-description {
+      padding-top: 50px; /* Reduce top padding */
+      padding-right: 20px; /* Adjust right padding */
+      padding-left: 20px; /* Adjust left padding */
+      text-align: center; /* Center-align the text for better presentation */
+  }
+
+  .search-btn {
+      width: 90%; /* Adjust the width to fit smaller screens */
+      height: 50px; /* Reduce height for smaller size */
+      margin-top: 20px; /* Reduce top margin for better spacing */
+      margin-left: 0; /* Remove left margin to center-align */
+      display: block; /* Ensure proper alignment on small screens */
+      margin-right: auto;
+      margin-left: auto; /* Center-align the search bar */
+  }
+
+  /* Adjust text inside banner-description if applicable */
+  .banner-description h1 {
+      font-size: 1.8rem; /* Reduce heading font size for smaller screens */
+      line-height: 1.4; /* Adjust line height for better readability */
+  }
+
+  .banner-description p {
+      font-size: 1rem; /* Adjust paragraph font size */
+      margin-top: 10px; /* Adjust spacing below the text */
+  }
+}
+
+
+
+
+
+
 
 .gradiant{
     background: hsla(0, 0%, 100%, 1);
@@ -1020,5 +1056,305 @@
       width: 100%; /* Full-width button */
       padding: 12px; /* Adjust padding */
       font-size: 16px; /* Adjust font size */
+  }
+}
+
+
+
+/* service-details */
+#service-details-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.service-details-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-details-left {
+  flex: 3;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-details-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.service-details-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #b08968;
+  margin-bottom: 15px;
+}
+
+.service-details-description,
+.service-details-extra {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.service-details-points {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.service-details-points li {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.check-icon {
+  color: #b08968;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.service-details-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.services-button {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.services-button:hover {
+  background-color: #b08968;
+  color: #fff;
+  border-color: #b08968;
+}
+
+.consultation-form-container {
+  background-color: #b6864b;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-form-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+#unique-consultation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.unique-form-input,
+.unique-form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.unique-form-textarea {
+  height: 100px;
+}
+
+.unique-form-submit-button {
+  background-color: #4e290a;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.unique-form-submit-button:hover {
+  background-color: #94723e;
+}
+
+
+/* Hide the collapse content by default */
+.collapse-content {
+  display: none;
+  padding-bottom: 10px;
+  /* margin-top: 5px; */
+  background-color: #f9f9f9;
+  /* border: 1px solid #ccc;
+  border-radius: 4px; */
+  color: #333;
+  font-size: 14px;
+}
+
+/* Optional: Style for the buttons when toggling */
+.services-button {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.services-button.active {
+  background-color: #b08968;
+  color: #fff;
+  border-color: #b08968;
+}
+
+
+/* Service Details - Mobile Responsive */
+@media (max-width: 768px) {
+  /* Container adjustments for smaller screens */
+  .service-details-container {
+    flex-direction: column; /* Stack the two sections vertically */
+    padding: 20px;
+  }
+
+  /* Left section adjustments */
+  .service-details-left {
+    flex: 1; /* Make the left section take full width */
+    margin-bottom: 20px; /* Add some space below for separation */
+  }
+
+  /* Service title adjustments */
+  .service-details-title {
+    font-size: 24px; /* Make the title smaller */
+    margin-bottom: 10px;
+  }
+
+  /* Description and extra info adjustments */
+  .service-details-description,
+  .service-details-extra {
+    font-size: 14px; /* Smaller font size for smaller screens */
+  }
+
+  /* List of points adjustments */
+  .service-details-points li {
+    font-size: 14px; /* Reduce font size */
+  }
+
+  /* Right section adjustments */
+  .service-details-right {
+    flex: 1; /* Make the right section take full width */
+    margin-top: 20px; /* Add margin for separation */
+  }
+
+  /* Service buttons adjustments */
+  .services-button {
+    font-size: 14px; /* Smaller font size for buttons */
+    padding: 8px 12px; /* Adjust padding for smaller devices */
+  }
+
+  /* Consultation form container adjustments */
+  .consultation-form-container {
+    padding: 15px; /* Reduce padding for smaller devices */
+  }
+
+  /* Consultation form title adjustments */
+  .consultation-form-title {
+    font-size: 18px; /* Smaller title font */
+  }
+
+  /* Consultation form input adjustments */
+  .unique-form-input,
+  .unique-form-textarea {
+    font-size: 14px; /* Smaller font for inputs */
+    padding: 8px; /* Adjust padding */
+  }
+
+  /* Submit button adjustments */
+  .unique-form-submit-button {
+    font-size: 14px; /* Smaller font for submit button */
+    padding: 8px 12px; /* Adjust padding */
+  }
+
+  /* Collapse content styling for smaller screens */
+  .collapse-content {
+    font-size: 13px; /* Smaller font for collapse content */
+  }
+}
+
+/* For extra small devices (Phones) */
+@media (max-width: 480px) {
+  /* Adjust container and layout to be more compact */
+  .service-details-container {
+    padding: 10px;
+  }
+
+  .service-details-left {
+    padding: 15px; /* Less padding */
+  }
+
+  .service-details-title {
+    font-size: 20px; /* Title font even smaller */
+    margin-bottom: 8px;
+  }
+
+  .service-details-description,
+  .service-details-extra {
+    font-size: 13px; /* Further reduced font size */
+  }
+
+  .service-details-points li {
+    font-size: 13px; /* Adjust point font size */
+  }
+
+  .services-button {
+    font-size: 13px; /* Smaller button font */
+    padding: 6px 10px; /* Adjust button padding */
+  }
+
+  .consultation-form-container {
+    padding: 10px; /* Reduce padding */
+  }
+
+  .consultation-form-title {
+    font-size: 16px; /* Smaller title font */
+  }
+
+  .unique-form-input,
+  .unique-form-textarea {
+    font-size: 12px; /* Smaller input font */
+    padding: 6px; /* Adjust padding */
+  }
+
+  .unique-form-submit-button {
+    font-size: 12px; /* Smaller button font */
+    padding: 6px 10px; /* Adjust padding */
   }
 }

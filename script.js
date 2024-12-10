@@ -89,3 +89,36 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".services-button");
+
+    buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+            // Get the ID of the associated collapse content
+            const collapseId = this.getAttribute("data-collapse");
+            const collapseContent = document.getElementById(collapseId);
+
+            // Toggle visibility of the content
+            if (collapseContent.style.display === "block") {
+                collapseContent.style.display = "none";
+                this.classList.remove("active");
+            } else {
+                // Hide any other open collapse content
+                document.querySelectorAll(".collapse-content").forEach((content) => {
+                    content.style.display = "none";
+                });
+
+                // Remove active state from all buttons
+                buttons.forEach((btn) => btn.classList.remove("active"));
+
+                // Show the current content
+                collapseContent.style.display = "block";
+                this.classList.add("active");
+            }
+        });
+    });
+});
