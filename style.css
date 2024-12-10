@@ -768,6 +768,77 @@
   color: #dc8f3c; /* Gold text */
 }
 
+/* Responsive styles for mobile */
+@media screen and (max-width: 768px) {
+  .services-process {
+      padding: 30px 0; /* Reduce vertical padding */
+      background-size: cover; /* Ensure background image scales properly */
+  }
+
+  .content-wrapper {
+      grid-template-columns: 1fr; /* Stack content vertically */
+      gap: 20px; /* Reduce gap between sections */
+  }
+
+  /* Left Section (Process Steps) */
+  .process-steps {
+      padding: 20px; /* Reduce padding */
+      text-align: center; /* Center-align text for better readability */
+  }
+
+  .section-title {
+      font-size: 1.5rem; /* Reduce title size */
+  }
+
+  .section-subtitle {
+      font-size: 0.9rem; /* Reduce subtitle size */
+  }
+
+  .step h3 {
+      font-size: 1.2rem; /* Adjust step title size */
+  }
+
+  .step h4 {
+      font-size: 1rem; /* Adjust step heading size */
+  }
+
+  .step p {
+      font-size: 0.8rem; /* Adjust step text size */
+  }
+
+  .step-number-box {
+      width: 40px; /* Reduce box size */
+      height: 40px;
+      margin: 0 auto 10px; /* Center-align and add spacing */
+  }
+
+  .step-number-box h3 {
+      font-size: 1.2rem; /* Adjust font size for the number */
+  }
+
+  /* Right Section (Image with Quote) */
+  .image-quote {
+      height: 250px; /* Reduce height for smaller screens */
+      background-size: cover; /* Ensure background image fits properly */
+  }
+
+  .quote-box {
+      margin: 10px; /* Reduce margin */
+      padding: 15px; /* Adjust padding for smaller screen */
+      font-size: 0.9rem; /* Adjust font size */
+  }
+
+  .quote {
+      font-size: 0.8rem; /* Reduce quote font size */
+  }
+
+  .quote-author {
+      font-size: 0.9rem; /* Adjust author text size */
+  }
+}
+
+
+
 
 
 /* contact index */
