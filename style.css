@@ -330,6 +330,35 @@
   z-index: 10000; /* Ensures the toggle button is in front */
 }
 
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  #chatbot {
+      width: 100%; /* Full width on mobile */
+      height: 70%; /* Adjust height for better visibility */
+      right: 0; /* Align to the right edge */
+      border-radius: 10px 10px 0 0; /* Remove side roundness */
+      margin-bottom: 0;
+  }
+
+  #chatbot-header {
+      font-size: 14px; /* Slightly smaller font for mobile */
+      padding: 8px; /* Reduce padding */
+  }
+
+  #chatbot-body {
+      font-size: 12px; /* Smaller font for mobile readability */
+  }
+
+  #chatbot-input input {
+      width: 70%; /* Adjust input field size */
+  }
+
+  #chatbot-toggle-btn {
+      bottom: 10px; /* Adjust position for smaller screens */
+      right: 10px;
+  }
+}
+
 
 /* our Lawyers */
 .our-lawyers {
