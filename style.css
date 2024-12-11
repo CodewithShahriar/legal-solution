@@ -1573,3 +1573,77 @@
 .unique-find-out-btn:hover {
   background-color: #5a3710;
 }
+
+
+
+/* case study */
+.case-study {
+  font-family: Arial, sans-serif;
+}
+
+/* Left Content Styling */
+.case-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.case-description {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.process-steps {
+  list-style-type: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.process-steps li {
+  margin-bottom: 10px;
+  color: #000000;
+  font-size: 16px;
+}
+.process-list{
+  font-size: 26px;
+}
+
+/* Right Sidebar Styling */
+.case-info {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.case-info li {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.case-study-sidebar {
+  background-color: #fff8f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.bg-brown {
+  background-color: #6b4211;
+  color: white;
+}
+
+.list-group-item {
+  font-size: 1em;
+  padding: 10px;
+}
+
+.lawyer-profile img {
+  border: 2px solid #ddd;
+}
+
+.btn-primary {
+  background-color: #6b4211;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #5a3710;
+}

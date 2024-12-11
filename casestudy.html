@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Legal Solution</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/bd160d65ef.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+
+
+  <!-- Navbar -->
+  <header class="container-fluid px-4">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo2.png" alt="Logo" style="height: 50px;" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Legal Consultation</a>
+            </li>
+            <li class="nav-item"><a class="nav-link " href="lawyers.html">Our Lawyers</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Legal Resources</a>
+            </li>
+            <li class="nav-item"><a class="nav-link active" style="color: #b68c5a;" href="#">Contact Us</a></li>
+          </ul>
+          <button
+            type="button"
+            class="btn text-white"
+            style="background-color: #b68c5a;"
+            data-bs-toggle="modal"
+            data-bs-target="#appointmentModal"
+          >
+            Make an Appointment
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+   <!-- Appointment Modal -->
+   <div
+   class="modal fade"
+   id="appointmentModal"
+   tabindex="-1"
+   aria-labelledby="appointmentModalLabel"
+   aria-hidden="true"
+ >
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="appointmentModalLabel">Make an Appointment</h5>
+         <button
+           type="button"
+           class="btn-close"
+           data-bs-dismiss="modal"
+           aria-label="Close"
+         ></button>
+       </div>
+       <div class="modal-body">
+         <form id="appointmentForm">
+           <div class="mb-3">
+             <label for="name" class="form-label">Name</label>
+             <input type="text" class="form-control" id="name" required />
+           </div>
+           <div class="mb-3">
+             <label for="email" class="form-label">Email</label>
+             <input type="email" class="form-control" id="email" required />
+           </div>
+           <div class="mb-3">
+             <label for="phone" class="form-label">Phone</label>
+             <input type="tel" class="form-control" id="phone" required />
+           </div>
+           <div class="mb-3">
+             <label for="date" class="form-label">Preferred Date</label>
+             <input type="date" class="form-control" id="date" required />
+           </div>
+           <button
+             type="submit"
+             class="btn text-white"
+             style="background-color: #b68c5a;"
+           >
+             Submit
+           </button>
+         </form>
+         <div
+           id="confirmationMessage"
+           class="text-success mt-3"
+           style="display: none;"
+         >
+           Your appointment has been booked successfully!
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ 
+ <section class="case-study container my-5">
+    <div class="row">
+      <!-- Left Content -->
+      <div class="col-lg-8">
+        <div class="case-details">
+            <img src="https://demo.egenslab.com/html/corelaw/preview/assets/images/bg/cs-details.png" alt="" style="width: 97%; border-radius: 15px; padding-bottom: 10px;">
+          <h2 class="case-title">Criminal Law</h2>
+          <p class="case-description">
+            Criminal law focuses on the prosecution and defense of individuals charged with criminal offenses. At <strong>Justice</strong> we are committed to ensuring that justice is served, whether you are facing charges or seeking legal support for a loved one. With a comprehensive understanding of criminal law, we work tirelessly to protect your rights and fight for the best possible outcome.
+          </p>
+  
+          <!-- Sections -->
+          <h4 class="mt-4">01. The Challenge.</h4>
+          <p>
+            Being accused of a criminal offense can be overwhelming and life-altering. The legal process is complex, and navigating the charges against you requires skilled defense strategies and expertise in criminal law. We understand the emotional and financial impact of criminal charges and are dedicated to providing you with the support you need.
+          </p>
+          <div class="row g-3 my-3">
+            <div class="col-md-6">
+              <img src="https://demo.egenslab.com/html/corelaw/preview/assets/images/bg/cs-details1.png" alt="Challenge Image 1" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+              <img src="https://demo.egenslab.com/html/corelaw/preview/assets/images/bg/cs-details2.png" alt="Challenge Image 2" class="img-fluid rounded">
+            </div>
+          </div>
+  
+          <h4 class="mt-4">02. Our Process.</h4>
+          <p>
+            Our approach to criminal law is methodical and thorough. Here's how we guide you through the process:
+          </p>
+          <ul class="process-steps">
+            <li> <span class="process-list"><i class="fa-regular fa-circle-right" style="color: #b68c5a;"></i> Planning The Case:</span> <br> We begin by carefully evaluating the charges against you, identifying any weaknesses in the prosecution’s case, and developing a strategy tailored to your situation.</li>
+            <li><span class="process-list"><i class="fa-regular fa-circle-right" style="color: #b68c5a;"></i> Evaluate Situation:</span> <br>We assess all available evidence and interview witnesses to build a comprehensive defense.</li>
+            <li><span class="process-list"><i class="fa-regular fa-circle-right" style="color: #b68c5a;"></i> File The Case To The Court:</span> <br> We prepare and file all necessary documents to initiate or respond to criminal proceedings.</li>
+            <li><span class="process-list"><i class="fa-regular fa-circle-right" style="color: #b68c5a;"></i> Gather More Information:</span> <br>We continue to gather evidence, consult experts, and examine all aspects of the case to strengthen your defense.</li>
+          </ul>
+          <h4 class="mt-4">03. The Result.</h4>
+          <p>
+            Our goal is to achieve the best possible outcome for you. Whether it’s a dismissal, reduction in charges, or a not-guilty verdict, we will advocate relentlessly for your rights. With a focus on fair representation, we strive to ensure justice is served.
+          </p>
+          <div class="row g-3 my-3">
+            <div class="col-md-6">
+              <img src="https://demo.egenslab.com/html/corelaw/preview/assets/images/bg/cs-details3.png" alt="Result Image 1" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+              <img src="https://demo.egenslab.com/html/corelaw/preview/assets/images/bg/cs-details4.png" alt="Result Image 2" class="img-fluid rounded">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Right Sidebar -->
+      <div class="col-lg-4">
+        <div class="case-info card p-3 mb-4">
+          <ul class="list-unstyled">
+            <li><strong>Client:</strong> <span>Argino Jones</span></li>
+            <li><strong>Category:</strong> <span>Criminal Law</span></li>
+            <li><strong>Time Frame:</strong> <span>5 Months</span></li>
+            <li><strong>Year:</strong> <span>2022</span></li>
+            <li><strong>Lawyer:</strong> <span>Jordan Morisen</span></li>
+          </ul>
+        </div>
+        <div class="case-study-sidebar card p-3">
+          <h5 class="text-white bg-brown p-2 rounded">Case Study</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Criminal Law</li>
+            <li class="list-group-item">Family Law</li>
+            <li class="list-group-item">Civil Law</li>
+            <li class="list-group-item">Workplace Accident</li>
+            <li class="list-group-item">Education Law</li>
+            <li class="list-group-item">Business Law</li>
+          </ul>
+          <div class="lawyer-profile mt-4 text-center">
+            <img src="https://demo.egenslab.com/html/corelaw/preview/assets/images/bg/lawyer-dp.png" alt="Lawyer Profile" class="rounded-circle mb-3" style="width: 80px;">
+            <h6>Jordan Morisen</h6>
+            <p>Criminal Lawyer</p>
+            <button class="btn btn-primary">Case Visit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+      
+    
+<!-- footer -->
+<footer class="mt-5 bg-dark text-white">
+    <div class="container py-5">
+        <div class="row ms-5 me-4">
+            <div class="col-md-3 ms-5">
+                <img class="img-fluid" src="images/logo.png" alt="">
+                <p class="text-white-50 pt-3">A Single Platform For 
+                  All Legal Services <br>
+                  </p>
+            </div>
+            <div class="col-md-2 text-white ps-5">
+                <h5 class="fw-bold pb-4 mt-3">Useful Links</h5>
+                <p><a class="text-decoration-none text-white-50" href="">Home</a></p>
+                <p><a class="text-decoration-none text-white-50" href="">About us</a></p>
+                <p><a class="text-decoration-none text-white-50" href="">Blog</a></p>
+                <p><a class="text-decoration-none text-white-50" href="">Contact Us</a></p>
+            </div>
+            <div class="col-md-2 text-white ps-5" >
+              <h5 class="fw-bold pb-4 mt-3">Contact Now</h5>
+                <p class="text-white-50">555 4th 5t NW, Washington <br>
+                  DC 20530, United States</p>
+                
+                <p class="text-white-50">
+                    support@legalsolution.tld
+                 </p>
+                  
+                
+            </div>
+            <div class="col-md-4 text-white ps-5">
+              <h5 class="fw-bold pb-4 mt-3">Subscribe</h5>
+                <p class="text-white-50">Subscribe for our latest & <br>
+                  Articles. We Won t Give You <br>
+                  Spam Mails</p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control rounded-3" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <img src="images/Group 42.png" alt="">
+                    
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+  
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2024 CodewithShahriar | All Rights Reserved</p>
+  <a href="#" class="text-white mx-2"><i class="fa-brands fa-facebook"></i></a>
+  <a href="#" class="text-white mx-2"><i class="fa-brands fa-twitter"></i></a>
+  <a href="#" class="text-white mx-2"><i class="fa-brands fa-linkedin"></i></a>
+</footer>
+
+
+
+
+
+  <!-- bs js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+  <script src="data_store.js"></script>
+  <script src="chatbot.js"></script>
+
+</body>
+</html>
