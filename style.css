@@ -38,6 +38,9 @@
       padding-left: 20px; /* Adjust left padding */
       text-align: center; /* Center-align the text for better presentation */
   }
+  .banner-img{
+    width: 1000px;
+  }
 
   .search-btn {
       width: 90%; /* Adjust the width to fit smaller screens */
@@ -1040,12 +1043,14 @@
   }
 
   .custom-contact-form textarea {
-      height: 120px; /* Slightly larger height for better usability */
+      height: 130px; /* Slightly larger height for better usability */
+      width: 130px;
   }
 
   .custom-contact-info {
       width: 100%; /* Full width for contact info */
       margin-top: 20px; /* Add spacing above info */
+      margin: 0 140px;
   }
 
   .custom-info-item {
