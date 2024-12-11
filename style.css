@@ -1583,7 +1583,7 @@
 
 /* Left Content Styling */
 .case-title {
-  font-size: 2em;
+  font-size: 2.2em;
   font-weight: bold;
 }
 
@@ -1602,6 +1602,7 @@
   margin-bottom: 10px;
   color: #000000;
   font-size: 16px;
+  padding-bottom: 25px;
 }
 .process-list{
   font-size: 26px;
@@ -1612,11 +1613,12 @@
   background-color: #f8f9fa;
   border: 1px solid #ddd;
   border-radius: 5px;
+  margin-top: 10px;
 }
 
 .case-info li {
   margin-bottom: 10px;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .case-study-sidebar {
@@ -1646,4 +1648,8 @@
 
 .btn-primary:hover {
   background-color: #5a3710;
+}
+
+.lawyer-profile h6{
+  font-size: 25px;
 }
