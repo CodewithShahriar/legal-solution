@@ -1358,3 +1358,138 @@
     padding: 6px 10px; /* Adjust padding */
   }
 }
+
+
+
+/* about home */
+/* About Us Prime Section */
+#aboutus-prime {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.aboutus-prime-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Left Section Styling */
+.aboutus-prime-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.aboutus-prime-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.aboutus-highlight {
+  color: #956137; /* Adjust highlight color to match the theme */
+}
+
+.aboutus-prime-description {
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.aboutus-prime-subtitle {
+  font-size: 30px;
+  font-weight: bold;
+  color: #222222;
+  margin: 30px 0 10px;
+}
+
+.aboutus-prime-summary {
+  font-size: 16px;
+  color: #777777;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.aboutus-prime-signature {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.signature-image {
+  width: 150px;
+  height: auto;
+}
+
+.aboutus-signature-name {
+  font-size: 16px;
+  font-style: italic;
+  color: #b08968;
+  margin-top: 5px;
+}
+
+/* Right Section Styling */
+.aboutus-prime-visual {
+  flex: 1;
+  max-width: 50%;
+  position: relative;
+}
+
+.aboutus-prime-image-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.aboutus-prime-image {
+  width: 100%;
+  border-radius: 20%; /* Rounded corners for a modern look */
+  margin-top: 10px;
+  height: 550px;
+}
+
+/* Badge Styling */
+/* .aboutus-prime-badge {
+  position: absolute;
+  top: 0%;
+  right: -5%;
+  background-color: #935734;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.aboutus-prime-badge img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 5px;
+} */
+
+/* .aboutus-prime-badge .badge-year {
+  font-size: 34px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.aboutus-prime-badge .badge-text {
+  font-size: 18px;
+  color: #ffffff;
+  
+  text-align: center;
+} */

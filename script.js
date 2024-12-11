@@ -122,3 +122,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+
+document.querySelector('.collapsible').addEventListener('click', function () {
+  const content = document.querySelector('.aboutus-prime-summary');
+  content.style.display = content.style.display === 'none' ? 'block' : 'none';
+});
