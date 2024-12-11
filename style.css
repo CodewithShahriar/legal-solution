@@ -109,6 +109,16 @@
     filter: brightness(0) invert(1); /* Optional: Inverts image colors for better visibility */
 }
 
+.find-out-more-btn a{
+  color: #4e290a;
+  text-decoration: none;
+}
+.find-out-more-btn a:hover{
+  color: #ffffff;
+  
+  
+}
+
 
 
 .navbar-nav .nav-link {
