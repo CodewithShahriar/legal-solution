@@ -1493,3 +1493,82 @@
   
   text-align: center;
 } */
+
+
+/* Card container */
+.unique-card-container {
+  perspective: 1000px;
+}
+
+.unique-card {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  transform-style: preserve-3d;
+  transition: transform 1.1s;
+}
+
+.unique-card-container:hover .unique-card {
+  transform: rotateY(180deg);
+}
+
+/* Card front and back */
+.unique-card-front, .unique-card-back {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.unique-card-front {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.unique-card-back {
+  background-color: #6b4211;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
+  font-size: 1.0em;
+  text-align: left;
+  border-radius: 20px;
+}
+
+/* Styling for text on front */
+.unique-card-title {
+  margin-top: 15px;
+  font-size: 1.5em;
+}
+
+.unique-card-text {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #666666;
+}
+
+/* Button */
+.unique-find-out-btn {
+  background-color: #6b4211;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.unique-find-out-btn:hover {
+  background-color: #5a3710;
+}
