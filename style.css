@@ -995,69 +995,85 @@
 /* Responsive Design for Contact Section */
 @media (max-width: 768px) {
   .custom-contact-section {
-      padding: 40px 15px; /* Adjust padding for smaller screens */
-      text-align: center; /* Center-align text for better readability */
+      padding: 20px 10px; /* Reduced padding for smaller screens */
+      text-align: center; /* Center-align text for readability */
   }
 
   .custom-container {
+      display: flex;
       flex-direction: column; /* Stack items vertically */
       align-items: center;
   }
 
   .custom-contact-content {
+      display: flex;
       flex-direction: column; /* Stack form and info vertically */
-      gap: 20px;
+      gap: 15px; /* Maintain appropriate spacing */
+      width: 100%; /* Full width for content */
   }
 
   .custom-contact-form {
-      max-width: 100%; /* Full width for the form */
-      margin: 0; /* Remove side margins */
+      width: 100%; /* Ensure full width */
+      margin: 0 auto; /* Center form */
+      padding: 15px; /* Add inner padding for spacing */
+      box-sizing: border-box; /* Include padding in width calculation */
   }
 
   .custom-contact-form h2 {
-      font-size: 1.5rem; /* Slightly smaller headline */
+      font-size: 1.6rem; /* Adjust heading size for readability */
+      margin-bottom: 10px; /* Add spacing below heading */
   }
 
   .custom-contact-form h3 {
-      font-size: 1rem; /* Adjust subheading size */
+      font-size: 1.2rem; /* Adjust subheading size */
+      margin-bottom: 15px; /* Add spacing below subheading */
   }
 
   .custom-contact-form input,
   .custom-contact-form select,
   .custom-contact-form textarea {
-      padding: 12px; /* Reduce padding for inputs */
-      font-size: 14px; /* Adjust font size */
+      width: 100%; /* Full width for inputs */
+      padding: 10px; /* Consistent padding */
+      font-size: 1rem; /* Improved readability */
+      margin-bottom: 10px; /* Space between inputs */
+      box-sizing: border-box; /* Include padding in width calculation */
   }
 
   .custom-contact-form textarea {
-      height: 100px; /* Slightly smaller height for textarea */
+      height: 120px; /* Slightly larger height for better usability */
   }
 
   .custom-contact-info {
-      max-width: 100%; /* Full width for contact info */
-      margin-top: 20px; /* Adjust top margin */
+      width: 100%; /* Full width for contact info */
+      margin-top: 20px; /* Add spacing above info */
   }
 
   .custom-info-item {
+      display: flex;
       flex-direction: column; /* Stack icon and text */
-      align-items: center; /* Center-align content */
-      gap: 10px; /* Adjust gap between icon and text */
+      align-items: center; /* Center content */
+      gap: 10px; /* Space between icon and text */
+      text-align: center; /* Center-align text */
   }
 
   .custom-info-item h4 {
-      font-size: 1rem; /* Adjust title font size */
+      font-size: 1.2rem; /* Adjust title font size */
+      margin: 5px 0; /* Add spacing */
   }
 
   .custom-info-item p {
-      font-size: 0.9rem; /* Adjust paragraph font size */
+      font-size: 1rem; /* Adjust paragraph font size */
+      margin: 0; /* Remove unnecessary margin */
   }
 
   .custom-contact-form .custom-submit-btn {
       width: 100%; /* Full-width button */
-      padding: 12px; /* Adjust padding */
-      font-size: 16px; /* Adjust font size */
+      padding: 12px 20px; /* Comfortable padding */
+      font-size: 1rem; /* Readable font size */
+      border-radius: 5px; /* Rounded corners for better aesthetics */
   }
 }
+
 
 
 
@@ -1483,6 +1499,73 @@
   font-weight: bold;
   text-align: right;
   color: #1e3c72;
+}
+
+@media (max-width: 768px) {
+  #aboutus-prime {
+    padding: 40px 15px;
+  }
+
+  .aboutus-prime-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .aboutus-prime-content,
+  .aboutus-prime-visual {
+    max-width: 100%;
+    flex: none;
+  }
+
+  .aboutus-prime-title {
+    font-size: 28px; /* Reduce font size for smaller screens */
+  }
+
+  .aboutus-prime-description,
+  .aboutus-prime-summary {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .aboutus-prime-subtitle {
+    font-size: 24px; /* Adjust subtitle size */
+  }
+
+  .aboutus-prime-signature {
+    align-items: center; /* Center-align the signature */
+  }
+
+  .signature-image {
+    width: 120px; /* Scale down the signature image */
+  }
+
+  .aboutus-signature-name {
+    font-size: 14px; /* Adjust signature name font size */
+  }
+
+  .aboutus-prime-image {
+    height: auto; /* Maintain aspect ratio on smaller screens */
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .image-quote-about {
+    width: 100%; /* Adjust the image quote size */
+    height: 300px;
+  }
+
+  .quote-box-about {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .quote-about {
+    font-size: 14px; /* Smaller font size for quotes */
+  }
+
+  .quote-author-about {
+    font-size: 14px;
+  }
 }
 
 
