@@ -1454,6 +1454,38 @@
   height: 550px;
 }
 
+.image-quote-about {
+  position: relative;
+  background: url('https://images.stockcake.com/public/7/9/6/7961502b-9f82-459a-b023-6ec15a02c007_large/focused-female-lawyer-stockcake.jpg')
+    no-repeat center/cover;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-end;
+  width: 500px;
+  height: 500px;
+}
+
+.quote-box-about {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-about {
+  font-style: italic;
+  font-size: 1rem;
+ 
+}
+
+.quote-author-about {
+  font-weight: bold;
+  text-align: right;
+  color: #1e3c72;
+}
+
+
 /* Badge Styling */
 /* .aboutus-prime-badge {
   position: absolute;
@@ -1653,3 +1685,5 @@
 .lawyer-profile h6{
   font-size: 25px;
 }
+
+
